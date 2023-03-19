@@ -16,8 +16,9 @@ import HelloWorld from './components/HelloWorld.vue'
       </nav>
     </div>
   </header> -->
-  <header>
-    <h1 class="title">Gabriel Santos</h1>
+  <header class="header">
+    <img class="logo" src="@/assets/logogs.svg">
+    <!-- <h1 class="title">Gabriel Santos</h1> -->
     <nav class="main-menu">
       <RouterLink to="/" class="menu-item">
         <v-btn color="secondary">
@@ -46,27 +47,44 @@ import HelloWorld from './components/HelloWorld.vue'
     </nav>
   </header>
 
-  <RouterView />
+  <RouterView class="router-view" />
 </template>
 
 <style scoped>
-header {
+.header {
+  max-width: 100%;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+  overflow: hidden;
+}
+.logo {
+  width: 550px;
+  max-width: 98%;
+  padding: 15px 30px;
+  border-bottom: 1.5px solid #2c3e50;
 }
 .title {
+  flex: 1 1 auto;
   font-family: 'Times New Roman', Times, serif;
-  font-size: 43pt;
   border-bottom: 2px solid #2c3e50;
   padding: 0 50px;
+  text-align: center;
+  font-size: 7vh;
+  white-space: nowrap;
 }
 .main-menu {
+  max-width: 100%;
   display: flex;
   flex-flow: row nowrap;
-  margin: 20px 0;
+  padding: 20px 0;
+  overflow: auto;
 }
 .menu-item + .menu-item {
   margin-left: 10px;
+}
+.router-view {
+  max-width: 100%;
+  overflow: hidden;
 }
 </style>
