@@ -1,6 +1,7 @@
 <template>
   <div class="about">
-    <h1>Trazido a vocês pelo caminho da ensolarada Adustina-BA</h1>
+    <h1>Sobre</h1>
+    <h2>Trazido a vocês pelo caminho da ensolarada Adustina-BA</h2>
   </div>
 </template>
 
@@ -10,5 +11,9 @@
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+  text-align: center;
+}
+h2 {
+  margin: 50px 0;
 }
 </style>
