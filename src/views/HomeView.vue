@@ -38,7 +38,10 @@ main {
   justify-content: center;
 }
 .card {
-  width: 300px;
+  flex: 1;
+  min-width: 300px;
+  max-width: 400px;
+  width: auto;
   margin: 20px;
 }
 </style>
