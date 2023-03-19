@@ -2,12 +2,8 @@
   <div class="about">
     <h1>Contato</h1>
     <div class="item">
-      <img class="icon" src="@/assets/logos/telegram.png">
-      <a href="https://t.me/gabrielsantos19">https://t.me/gabrielsantos19</a>
-    </div>
-    <div class="item">
       <img class="icon" src="@/assets/logos/github.svg">
-      <a href="https://github.com/gabrielsantos19">https://github.com/gabrielsantos19</a>
+      <a href="https://github.com/gabrielsantos19">@gabrielsantos19</a>
     </div>
     <div class="item">
       <svg class="icon" viewBox="0 0 36 27" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -17,7 +13,15 @@
         <path fill-rule="evenodd" clip-rule="evenodd" d="M8.18182 13.0947V2.46094L17.9999 9.82279L27.818 2.46094V13.0947L17.9999 20.4566L8.18182 13.0947Z" fill="#EA4335"></path>
         <path d="M0 3.68754V6.95947L8.18176 13.0943V2.46056L5.89087 0.742797C3.46293 -1.07722 0 0.654864 0 3.68754Z" fill="#C5221F"></path>
       </svg>
-      <a href="mailto:biellsantos@academico.ufs.br">biellsantos@academico.ufs.br</a>
+      <a href="mailto:gabrielos@dcomp.ufs.br">gabrielos@dcomp.ufs.br</a>
+    </div>
+    <div class="item">
+      <img class="icon" src="@/assets/logos/freelancer.png">
+      <a href="https://www.freelancer.com/u/gabrielsantos19">@gabrielsantos19</a>
+    </div>
+    <div class="item">
+      <img class="icon" src="@/assets/logos/telegram.png">
+      <a href="https://t.me/gabrielsantos19">@gabrielsantos19</a>
     </div>
   </div>
 </template>
@@ -30,7 +34,7 @@
   align-items: center;
 }
 .icon {
-  width: 30px;
+  height: 30px;
   margin: 5px 10px;
 }
 .item {
