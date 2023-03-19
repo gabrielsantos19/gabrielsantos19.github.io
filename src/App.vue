@@ -1,47 +1,72 @@
 <script setup>
+import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
+  <!-- <header>
+    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
 
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
+
+      <nav>
+        <RouterLink to="/">Home</RouterLink>
+        <RouterLink to="/about">About</RouterLink>
+      </nav>
     </div>
+  </header> -->
+  <header>
+    <h1 class="title">Gabriel Santos</h1>
+    <nav class="main-menu">
+      <RouterLink to="/" class="menu-item">
+        <v-btn color="secondary">
+          <v-icon icon="mdi-home" size="large"></v-icon>
+          Início
+        </v-btn>
+      </RouterLink>
+      <RouterLink to="/" class="menu-item">
+        <v-btn color="secondary">
+          <v-icon icon="mdi-package-variant" size="large"></v-icon>
+          Soluções
+        </v-btn>
+      </RouterLink>
+      <RouterLink to="/about" class="menu-item">
+        <v-btn color="secondary">
+          <v-icon icon="mdi-information" size="large"></v-icon>
+          Sobre
+        </v-btn>
+      </RouterLink>
+      <RouterLink to="/contact" class="menu-item">
+        <v-btn color="secondary">
+          <v-icon icon="mdi-at" size="large"></v-icon>
+          Contato
+        </v-btn>
+      </RouterLink>
+    </nav>
   </header>
 
-  <main>
-    <TheWelcome />
-  </main>
+  <RouterView />
 </template>
 
 <style scoped>
 header {
-  line-height: 1.5;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
 }
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
+.title {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 43pt;
+  border-bottom: 2px solid #2c3e50;
+  padding: 0 50px;
 }
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
+.main-menu {
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 20px 0;
+}
+.menu-item + .menu-item {
+  margin-left: 10px;
 }
 </style>
