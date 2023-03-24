@@ -23,6 +23,12 @@ export default [
     text: "Acompanhar dados do GPS do dispositivo",
     page: "https://gabrielsantos19.github.io/gps/"
   },
+  {
+    title: "Tadreda",
+    subtitle: "Contador de moedas",
+    text: "Calculadora de prestações",
+    page: "https://gabrielsantos19.github.io/tadreda/"
+  },
   // {
   //   title: "",
   //   subtitle: "",
