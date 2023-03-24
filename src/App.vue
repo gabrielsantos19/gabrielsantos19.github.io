@@ -17,7 +17,7 @@ import HelloWorld from './components/HelloWorld.vue'
     </div>
   </header> -->
   <header class="header">
-    <img class="logo" src="@/assets/logogs.svg">
+    <img class="logo" src="@/assets/logos/gabriel_santos.svg">
     <!-- <h1 class="title">Gabriel Santos</h1> -->
     <nav class="main-menu">
       <RouterLink to="/" class="menu-item">
@@ -61,13 +61,11 @@ import HelloWorld from './components/HelloWorld.vue'
 .logo {
   width: 550px;
   max-width: 98%;
-  padding: 15px 30px;
-  border-bottom: 1.5px solid #2c3e50;
+  padding: 20px 30px;
 }
 .title {
   flex: 1 1 auto;
   font-family: 'Times New Roman', Times, serif;
-  border-bottom: 2px solid #2c3e50;
   padding: 0 50px;
   text-align: center;
   font-size: 7vh;
@@ -77,8 +75,11 @@ import HelloWorld from './components/HelloWorld.vue'
   max-width: 100%;
   display: flex;
   flex-flow: row nowrap;
-  padding: 20px 0;
+  padding: 10px 35px;
   overflow: auto;
+
+  border: 0 solid #2c3e50;
+  border-width: 1.5px 0;
 }
 .menu-item + .menu-item {
   margin-left: 10px;
