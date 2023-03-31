@@ -35,6 +35,13 @@
       <p class="item-text">
         <a href="https://t.me/gabrielsantos19">@gabrielsantos19</a>
       </p>
+
+      <div class="item-icon">
+        <img class="icon" src="@/assets/logos/LI-Logo.png">
+      </div>
+      <p class="item-text">
+        <a href="https://www.linkedin.com/in/gabrielsantos19/">@gabrielsantos19</a>
+      </p>
     </div>
   </div>
 </template>
